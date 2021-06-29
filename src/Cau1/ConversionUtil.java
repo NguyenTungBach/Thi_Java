@@ -36,7 +36,6 @@ public class ConversionUtil implements ConversionUtilImplement {
 
     public static void main(String[] args) {
         ConversionUtil test = new ConversionUtil();
-        System.out.printf("F -> C = %f", test.fahrenheitToCelsius(1));
         System.out.println("F -> C = "+ test.fahrenheitToCelsius(1));
         System.out.println("C -> F = "+ test.celsiusToFahrenheit(50));
 
