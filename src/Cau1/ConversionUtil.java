@@ -25,17 +25,18 @@ public class ConversionUtil implements ConversionUtilImplement {
     }
 
     public double fahrenheitToCelsius(double fDegree){
-        double c = (fDegree - 32) * 0.55;
+        double c = (fDegree - 32) * 5/9;
         return c;
     }
 
     public double celsiusToFahrenheit(double cDegree){
-        double f = (cDegree * 1.8) + 32;
+        double f = (cDegree * 9/5) + 32;
         return f;
     }
 
     public static void main(String[] args) {
         ConversionUtil test = new ConversionUtil();
+        System.out.printf("F -> C = %f", test.fahrenheitToCelsius(1));
         System.out.println("F -> C = "+ test.fahrenheitToCelsius(1));
         System.out.println("C -> F = "+ test.celsiusToFahrenheit(50));
 
